@@ -1,0 +1,146 @@
+body {
+  height: 100%;
+  background-image: url('img/final2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 0vh;
+  position: relative;
+  max-width: 1400px;
+  height: 488vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header img {
+  max-width: 50px; 
+  max-height: 50px; 
+}
+
+nav {
+  color: white;
+  height: 80px;
+  padding: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'sharp sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 80px;
+  padding: 20px;
+}
+
+nav ul li a:hover {
+  color: rgb(138, 191, 209);
+}
+
+#section1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#section2 {
+  position: relative;
+  top: calc(295vh - 200px);
+}
+
+#section3 {
+  position: relative;
+  top: calc(185vh - 100px);
+}
+
+#section4 {
+  position: relative;
+  top: calc(88vh - 100px);
+}
+
+#section5 {
+  position: relative;
+  top: calc(15vh - 100px);
+}
+
+p {
+  color: white;
+  font-family: 'sharp sans', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+button {
+  font-family: 'sharp sans', sans-serif;
+  border: solid 1px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin-left: 100px;
+}
+
+button:hover {
+  color: rgb(138, 191, 209);
+}
+
+#scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+
+#scroll-to-bottom {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 50px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  box-sizing: border-box;
+  transition: all 0
+}
