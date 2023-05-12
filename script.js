@@ -1,3 +1,26 @@
+
+// get all the sections on the page
+var sections = document.querySelectorAll('section');
+
+// calculate the total height of all the sections
+var totalHeight = 0;
+sections.forEach(function(section) {
+  totalHeight += section.offsetHeight;
+});
+
+// set the min-height of the body to the total height of all the sections
+document.body.style.minHeight = totalHeight + 'px';
+
+document.addEventListener('DOMContentLoaded', function() {
+    // calculate the total height of the content and set the min-height of the body
+    var sections = document.querySelectorAll('section');
+    var totalHeight = 0;
+    sections.forEach(function(section) {
+      totalHeight += section.offsetHeight;
+    });
+    document.body.style.minHeight = totalHeight + 'px';
+  });
+  
 var arrowImage = document.getElementById("scroll-to-bottom");
 
 arrowImage.addEventListener("click", function() {
@@ -24,6 +47,5 @@ arrowImage.addEventListener("animationend", function() {
 window.onload = function() {
     arrowImage.classList.add("pulse");
 };
-
 
 
