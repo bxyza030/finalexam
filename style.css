@@ -10,7 +10,7 @@ body {
   min-height: 0vh;
   position: relative;
   max-width: 1400px;
-  height: 488vh;
+  height: 284vw;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   padding: 20px 32px;
   top: 0;
-  width: 100%;
+  width: 90%;
   z-index: 1;
 }
 
@@ -111,7 +111,7 @@ button {
   margin-left: 100px;
 }
 
-button:hover {
+button a:hover {
   color: rgb(138, 191, 209);
 }
 
